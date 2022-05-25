@@ -38,7 +38,7 @@ $ans=mysql_num_rows($result);
               <?php 
               if($ans>0){
                 ?>
-                <p> <a href="#######.php?key=<?php echo $search ?>&id=<?php echo
+                <p><a href="#######.php?key=<?php echo $search ?>&id=<?php echo
                 $row['id']; ?>"><?php echo $row['name']; ?></a><?php echo $row['teacher']; ?><?php echo $row['time']; ?></p>
                 <?php } while ($row = mysql_fetch_assoc($result)); ?>
           </li>
