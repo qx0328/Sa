@@ -15,6 +15,51 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
 </head>
 <body>
+<nav class="navbar navbar-expand-lg navbar-light bg-white z-index-3 py-3">
+  <div class="container">
+    <a class="navbar-brand" href="index.php" rel="tooltip" title="Designed and Coded by Creative Tim" data-placement="bottom" target="_blank">
+    <strong>輔大課程評價系統</strong>
+    
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navigation" aria-controls="navigation" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navigation">
+      <ul class="navbar-nav navbar-nav-hover mx-auto">
+        <li class="nav-item px-3">
+          <a class="nav-link" href="課程查詢.php">
+            課程查詢
+          </a>
+        </li>
+
+        <li class="nav-item px-3">
+          <a class="nav-link" href="新增評價.php">
+            新增課程評價
+          </a>
+        </li>
+
+        <li class="nav-item px-3">
+          <a class="nav-link">
+            收藏課程
+          </a>
+        </li>
+
+        <li class="nav-item px-3">
+          <a class="nav-link ">
+            
+          </a>
+        </li>
+      </ul>
+
+      <ul class="navbar-nav ms-auto">
+        <a href="logout.php"><button type="button" class="btn btn-success">登出</button></a>
+      </ul>
+    </div>
+  </div>
+</nav>
+<!-- End Navbar -->
+<br><br>
+<h2 align="center">管理者檢舉</h2><br>
 <?php
         $sql= " SELECT * FROM `comment`";
         $result = mysqli_query($link,$sql); 
